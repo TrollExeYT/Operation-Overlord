@@ -1,0 +1,6 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://co0nx0i0flpw4"]
+
+[ext_resource type="FontFile" uid="uid://bn0rl4e31rtx6" path="res://scenes/src/fonts/OldNewspaperTypes.ttf" id="1_ndmsl"]
+
+[resource]
+default_font = ExtResource("1_ndmsl")

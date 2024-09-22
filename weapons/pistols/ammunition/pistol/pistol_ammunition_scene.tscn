@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://dl341srwig505"]
+
+[ext_resource type="Script" path="res://weapons/pistols/ammunition/ammunition_class.gd" id="1_l1v76"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xxo3x"]
+size = Vector2(4, 2)
+
+[node name="PistolAmmunition" type="Area2D"]
+collision_layer = 5
+collision_mask = 2
+script = ExtResource("1_l1v76")
+
+[node name="Collision" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_xxo3x")
+
+[node name="ProvisionalSprite" type="Polygon2D" parent="Collision"]
+color = Color(0.811765, 0.627451, 0, 1)
+polygon = PackedVector2Array(-2, -1, 2, -1, 2, 1, -2, 1)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

@@ -1,0 +1,28 @@
+[gd_scene load_steps=3 format=3 uid="uid://cimoa37xymu74"]
+
+[ext_resource type="Script" path="res://weapons/pistols/m1945/m_1945_script.gd" id="1_hg2u5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wnstp"]
+size = Vector2(10, 4)
+
+[node name="M1945" type="StaticBody2D"]
+collision_layer = 0
+collision_mask = 4
+script = ExtResource("1_hg2u5")
+
+[node name="Collision" type="CollisionShape2D" parent="."]
+position = Vector2(5, 0)
+shape = SubResource("RectangleShape2D_wnstp")
+
+[node name="ProvisionalSprite" type="Polygon2D" parent="Collision"]
+z_index = 2
+z_as_relative = false
+position = Vector2(-5, 0)
+color = Color(0.111197, 0.111197, 0.111197, 1)
+polygon = PackedVector2Array(0, -2, 10, -2, 10, 2, 0, 2)
+
+[node name="StartCannon" type="Node2D" parent="."]
+position = Vector2(7, 0)
+
+[node name="EndCannon" type="Node2D" parent="."]
+position = Vector2(10, 0)

@@ -1,0 +1,123 @@
+[gd_scene load_steps=5 format=3 uid="uid://b6tmh13xko2hg"]
+
+[ext_resource type="Theme" uid="uid://co0nx0i0flpw4" path="res://scenes/src/themes/main_theme.tres" id="1_thx2l"]
+[ext_resource type="Texture2D" uid="uid://dqh0v3xubmydf" path="res://scenes/levels/battle_of_normandia/select_menu/select_image.jpg" id="1_xmutj"]
+[ext_resource type="Script" path="res://scenes/gui/select_level/select_level_script.gd" id="1_y7nnw"]
+[ext_resource type="Theme" uid="uid://dl2b7fa847n36" path="res://scenes/src/themes/document_theme.tres" id="3_gwb7s"]
+
+[node name="SelectLevel" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_thx2l")
+script = ExtResource("1_y7nnw")
+
+[node name="Background" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+color = Color(0.0784314, 0.0784314, 0.0784314, 1)
+
+[node name="ButtonsPanel" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 32.0
+offset_top = 32.0
+offset_right = 352.0
+offset_bottom = 608.0
+
+[node name="Title" type="Label" parent="ButtonsPanel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.1
+anchor_top = 0.0555556
+anchor_right = 0.9
+anchor_bottom = 0.128472
+grow_horizontal = 0
+theme_override_font_sizes/font_size = 24
+text = "Select the Map"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Escape" type="Button" parent="ButtonsPanel"]
+layout_mode = 1
+offset_left = 32.0
+offset_top = 480.0
+offset_right = 128.0
+offset_bottom = 544.0
+theme_override_colors/font_disabled_color = Color(0.533324, 1.09497e-06, 2.88785e-07, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.94902, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0.947406, 4.06705e-06, 3.85046e-07, 1)
+theme_override_colors/font_pressed_color = Color(0.533333, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0.533333, 0, 0, 1)
+theme_override_colors/font_color = Color(0.533333, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0.533333, 0, 0, 1)
+theme_override_font_sizes/font_size = 24
+text = "Return"
+flat = true
+
+[node name="Start" type="Button" parent="ButtonsPanel"]
+layout_mode = 2
+offset_left = 149.0
+offset_top = 480.0
+offset_right = 288.0
+offset_bottom = 544.0
+theme_override_colors/font_hover_pressed_color = Color(0.94902, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0.94902, 0, 0, 1)
+theme_override_font_sizes/font_size = 24
+text = "Start Game"
+flat = true
+
+[node name="MapsDetails" type="Panel" parent="ButtonsPanel"]
+layout_mode = 0
+offset_left = 32.0
+offset_top = 128.0
+offset_right = 288.0
+offset_bottom = 448.0
+
+[node name="Title" type="Label" parent="ButtonsPanel/MapsDetails"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -128.0
+offset_top = -32.0
+offset_right = 128.0
+offset_bottom = 2.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 24
+text = "Battle of Normandy"
+horizontal_alignment = 1
+
+[node name="Description" type="RichTextLabel" parent="ButtonsPanel/MapsDetails"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 32.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("3_gwb7s")
+text = "After landing, the US and UK Marines encountered an unexpected presence, the undeads.
+
+Survive until help arrives."
+
+[node name="MapImage" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.333333
+anchor_top = 0.179012
+anchor_right = 0.944444
+anchor_bottom = 0.820988
+grow_horizontal = 0
+grow_vertical = 2
+texture = ExtResource("1_xmutj")
+expand_mode = 1
+stretch_mode = 4
+metadata/_edit_use_anchors_ = true
+
+[connection signal="pressed" from="ButtonsPanel/Escape" to="." method="_on_escape_pressed"]
+[connection signal="pressed" from="ButtonsPanel/Start" to="." method="_on_start_pressed"]
