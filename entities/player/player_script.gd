@@ -9,6 +9,7 @@ var weapon_in_use : int = 0 #Indice del arma que se usa
 var weapon_position : Node2D
 
 func _ready() -> void:
+	INGAME.active = true
 	INGAME.player = $"."
 	_set_weapon($WeaponPosition/M1945)
 

@@ -1,0 +1,12 @@
+res://scenes/gui/main_menu/main_menu_scene.tscn
+res://scenes/src/tilemaps/basic_tiles.tres
+res://scenes/gui/select_level/select_level_scene.tscn
+res://scenes/levels/battle_of_normandia/battle_of_normandy_scene.tscn
+res://scenes/src/utilities/ammunition_box/ammunition_box_scene.tscn
+res://entities/player/player_scene.tscn
+res://entities/player/camera/camera_scene.tscn
+res://entities/zombies/normal/normal_zombie_scene.tscn
+res://scenes/src/utilities/medic_machine/medic_machine_scene.tscn
+res://scenes/src/utilities/ammunition_box/ammunition_box_script.gd
+res://scenes/src/utilities/utility_class.gd
+res://scenes/src/utilities/medic_machine/medic_machine_script.gd

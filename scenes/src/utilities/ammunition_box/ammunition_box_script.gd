@@ -5,22 +5,17 @@ func _ready() -> void:
 	cost = 250
 
 
-func _physics_process(delta: float) -> void:
+func _physics_process(_delta: float) -> void:
 	if active and Input.is_action_just_pressed("p_interact"):
 		_add_ammunition()
 
 
 func _on_area_body_entered(_body: Node2D) -> void:
-	_activate()
+	_change_active()
 
 
 func _on_area_body_exited(_body: Node2D) -> void:
-	_activate()
-
-
-func _activate() -> void:
-	active = not active
-	message.visible = active
+	_change_active()
 
 
 func _add_ammunition() -> void:

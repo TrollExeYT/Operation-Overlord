@@ -1,0 +1,14 @@
+res://autoload/global/global_scene.tscn::e7417b1877a8eb5e0f0f8697c2a635ef::1727023824::res://.godot/exported/133200997/export-88eef7754fe4a0e27a208313d4a5ba91-global_scene.scn
+res://autoload/ingame/ingame_scene.tscn::1040a3358d23cf56b43c2a1837897c20::1727041751::res://.godot/exported/133200997/export-55e830c8a3d3c62f861682241fba6871-ingame_scene.scn
+res://entities/player/camera/camera_scene.tscn::1d06a3bee1a48de3b5fd1001e10b8890::1727042288::res://.godot/exported/133200997/export-d92c96a4a84287817e8b4490ea6f1557-camera_scene.scn
+res://entities/player/player_scene.tscn::8447fddefe5f43f11a198b232f37221c::1727042288::res://.godot/exported/133200997/export-bdec36284d65a5a772088430d495bdae-player_scene.scn
+res://entities/zombies/normal/normal_zombie_scene.tscn::7bd7659c8d567c952fb61c27bbe55f35::1727039607::res://.godot/exported/133200997/export-ce0b8e46774a4f99d29a9843af0d8430-normal_zombie_scene.scn
+res://scenes/gui/main_menu/main_menu_scene.tscn::bc1cc4f7239c788cb0da84383b561006::1727042288::res://.godot/exported/133200997/export-cd26b00edb366bb787368cb1c2bf50d6-main_menu_scene.scn
+res://scenes/gui/select_level/select_level_scene.tscn::b872f1f3657d6a4b3721358683051995::1727042288::res://.godot/exported/133200997/export-09ab48937a31a9d227c7496ccc971709-select_level_scene.scn
+res://scenes/levels/battle_of_normandia/battle_of_normandy_scene.tscn::d5861b1af9fcdfb8d9fb6ef074ee219c::1727042288::res://.godot/exported/133200997/export-fa4962eb73aa36befba466333a29293b-battle_of_normandy_scene.scn
+res://scenes/src/themes/document_theme.tres::51cf31fadc84fb2fade8dc4f3ef45a86::1727039447::res://.godot/exported/133200997/export-23969e4fe82a5909866c971a4208a6bb-document_theme.res
+res://scenes/src/themes/main_theme.tres::90ac16797dbd26e8fa81ed0f5ccdceef::1727039447::res://.godot/exported/133200997/export-e3e3c6c238a6fe450906bab66e64b9ff-main_theme.res
+res://scenes/src/tilemaps/basic_tiles.tres::c5f9dea2016056816efc994b879e8f20::1727039486::res://.godot/exported/133200997/export-790a64cde0a55c830c87aa45bd07826e-basic_tiles.res
+res://scenes/src/utilities/ammunition_box/ammunition_box_scene.tscn::4b3608951a9df285a323b6e2a40d400d::1727042288::res://.godot/exported/133200997/export-5771df9506b33989362cc417ecacfb77-ammunition_box_scene.scn
+res://weapons/pistols/ammunition/pistol/pistol_ammunition_scene.tscn::29eb6522e1ce730ef0df8e88ac3839a8::1725323484::res://.godot/exported/133200997/export-6dd9855b18e8d2b984308e3b3fa520ef-pistol_ammunition_scene.scn
+res://weapons/pistols/m1945/m_1945_scene.tscn::e5e5a2748f89e803a9073a34d317bfec::1727039629::res://.godot/exported/133200997/export-892851a7b5bcbd4f7318f0fde57a67a7-m_1945_scene.scn
