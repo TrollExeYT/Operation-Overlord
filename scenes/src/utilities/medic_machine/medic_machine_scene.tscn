@@ -10,6 +10,8 @@ size = Vector2(32, 32)
 size = Vector2(32, 32)
 
 [node name="MedicMachine" type="StaticBody2D"]
+collision_layer = 2
+collision_mask = 0
 script = ExtResource("1_f2nm8")
 
 [node name="Collision" type="CollisionShape2D" parent="."]
@@ -31,11 +33,14 @@ color = Color(0.627451, 0, 0, 1)
 
 [node name="Area" type="Area2D" parent="."]
 position = Vector2(0, 48)
+collision_layer = 0
+collision_mask = 8
 
 [node name="Collision" type="CollisionShape2D" parent="Area"]
 shape = SubResource("RectangleShape2D_wmagw")
 
 [node name="Message" type="Label" parent="."]
+visible = false
 offset_left = -88.0
 offset_top = 64.0
 offset_right = 88.0
@@ -44,3 +49,6 @@ theme = ExtResource("2_m64ga")
 theme_override_font_sizes/font_size = 14
 text = "Press E to heal you"
 horizontal_alignment = 1
+
+[connection signal="body_entered" from="Area" to="." method="_on_area_body_entered"]
+[connection signal="body_exited" from="Area" to="." method="_on_area_body_exited"]
