@@ -28,9 +28,13 @@ func _change_time(new_time : String) -> void:
 	$GUI/Time/Numbers.text = new_time
 
 
-func _change_reichsmarks(new_quantity : int) -> void:
-	$GUI/Reichsmarks.text = "Reichsmarks: " + str(new_quantity)
+func _change_reichsmarks() -> void:
+	$GUI/Reichsmarks.text = "Reichsmarks: " + str(INGAME.reichsmarks)
 
 
 func _change_health(new_health : float) -> void:
 	$GUI/HealthBar.value = new_health
+
+
+func _change_message(new_text : String) -> void:
+	$GUI/Message.text = new_text

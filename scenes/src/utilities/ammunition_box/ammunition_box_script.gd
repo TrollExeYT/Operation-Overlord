@@ -1,7 +1,6 @@
 extends Utility
 
 func _ready() -> void:
-	message = $Message
 	cost = 250
 
 

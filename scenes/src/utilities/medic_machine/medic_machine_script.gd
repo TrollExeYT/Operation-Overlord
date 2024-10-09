@@ -2,8 +2,6 @@ extends Utility
 
 func _ready() -> void:
 	cost = 0
-	message = $Message
-	message.rotation = 0
 
 
 func _heal_player() -> void:

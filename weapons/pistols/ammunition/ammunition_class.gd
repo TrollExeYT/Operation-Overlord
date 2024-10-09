@@ -21,6 +21,6 @@ func _on_body_entered(body: Node2D) -> void:
 		
 		body._check_health()
 		
-		INGAME.camera._change_reichsmarks(INGAME.reichsmarks)
+		INGAME.camera._change_reichsmarks()
 	
 	queue_free()
