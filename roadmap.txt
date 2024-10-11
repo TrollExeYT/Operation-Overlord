@@ -1,7 +1,0 @@
-Operation Overlord // Roadmap
-
-v1 (Next Update) :
-	Maps: Battle of Normandy
-	Weapons: M1945, STG45, MP44
-	Machines: Medic Machine, Munition Box
-	Zombies: Normals

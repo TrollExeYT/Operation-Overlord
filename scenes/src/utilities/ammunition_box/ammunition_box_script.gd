@@ -2,6 +2,7 @@ extends Utility
 
 func _ready() -> void:
 	cost = 250
+	message = "Purchase Ammunition for $250"
 
 
 func _physics_process(_delta: float) -> void:
@@ -23,5 +24,5 @@ func _add_ammunition() -> void:
 		INGAME.player._get_actual_weapon().ammunition = INGAME.player._get_actual_weapon().max_ammunition
 		
 	
-	INGAME.camera._change_reichsmarks(INGAME.reichsmarks)
+	INGAME.camera._change_reichsmarks()
 	INGAME.player._get_actual_weapon()._change_info()

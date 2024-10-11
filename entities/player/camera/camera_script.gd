@@ -14,11 +14,6 @@ func _process(_delta: float) -> void:
 		global_position = INGAME.player.global_position
 
 
-func _change_reload_label() -> void:
-	reloading = not reloading
-	$GUI/Reloading.visible = reloading
-
-
 func _change_weapon_info(new_name : String, new_ammunition : String) -> void:
 	$GUI/Weapon/Name.text = new_name
 	$GUI/Weapon/Ammunition.text = new_ammunition
