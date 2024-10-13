@@ -6,7 +6,7 @@
 size = Vector2(64, 32)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_q7bsi"]
-size = Vector2(256, 128)
+size = Vector2(192, 96)
 
 [node name="AmmunitionBox" type="StaticBody2D"]
 collision_layer = 2
@@ -31,7 +31,7 @@ collision_layer = 0
 collision_mask = 8
 
 [node name="Collision" type="CollisionShape2D" parent="Area"]
-position = Vector2(0, 64)
+position = Vector2(0, 48)
 shape = SubResource("RectangleShape2D_q7bsi")
 
 [connection signal="body_entered" from="Area" to="." method="_on_area_body_entered"]

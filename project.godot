@@ -10,14 +10,12 @@ config_version=5
 
 [application]
 
-config/name="Taller del Bayron"
+config/name="Operation Overlord"
 config/version="0.0.0.0"
 run/main_scene="res://scenes/gui/main_menu/main_menu_scene.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 run/max_fps=120
-boot_splash/image="res://icon.png"
 boot_splash/fullsize=false
-config/icon="res://icon.png"
 config/windows_native_icon="res://icon.ico"
 
 [autoload]

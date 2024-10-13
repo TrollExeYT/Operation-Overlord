@@ -2,6 +2,8 @@ extends Camera2D
 class_name PlayerCamera
 
 var reloading : bool = false
+@onready var gui : Control = $GUI
+@onready var menu : Control = $Menu
 
 func _ready() -> void:
 	INGAME.camera =  $"."
@@ -31,5 +33,14 @@ func _change_health(new_health : float) -> void:
 	$GUI/HealthBar.value = new_health
 
 
+func _bool_reloading() -> void:
+	$GUI/Message.visible = not $GUI/Message.visible
+	$GUI/Reloading.visible = not $GUI/Reloading.visible
+
+
 func _change_message(new_text : String) -> void:
 	$GUI/Message.text = new_text
+
+
+func _on_return_pressed() -> void:
+	pass # Replace with function body.

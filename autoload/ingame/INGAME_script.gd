@@ -17,7 +17,8 @@ func _start_game() -> void:
 	seconds = 0
 	
 	reichsmarks = 0
-
+	
+	active = true
 
 func _stop_game() -> void:
 	$TimeCounter.stop()
@@ -25,7 +26,16 @@ func _stop_game() -> void:
 	get_tree().change_scene_to_file("res://scenes/gui/main_menu/main_menu_scene.tscn")
 
 func _end_game() -> void:
-	pass
+	$TimeCounter.stop()
+	active = false
+	await get_tree().create_timer(5).timeout
+	get_tree().change_scene_to_file("res://scenes/gui/select_level/select_level_scene.tscn")
+
+func _close_game() -> void:
+	$TimeCounter.stop()
+	active = false
+	get_tree().paused = false
+	get_tree().change_scene_to_file("res://scenes/gui/main_menu/main_menu_scene.tscn")
 
 func _on_time_counter_timeout() -> void:
 	var new_time : String = ""
@@ -51,5 +61,8 @@ func _on_time_counter_timeout() -> void:
 		new_time += "0" + str(seconds)
 	else:
 		new_time += str(seconds)
+	
+	if minutes < 1 and seconds < 1:
+		_end_game()
 	
 	camera._change_time(new_time)

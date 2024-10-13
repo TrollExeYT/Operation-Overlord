@@ -49,7 +49,7 @@ func _get_actual_weapon() -> Weapon:
 	return weapons[weapon_in_use]
 
 
-func _add_weapon(new_weapon : PackedScene):
+func _add_weapon(new_weapon : PackedScene) -> void:
 	var instantiated_weapon : Weapon = new_weapon.instantiate()
 	instantiated_weapon.position = weapon_position.position
 	weapon_position.add_child(instantiated_weapon)

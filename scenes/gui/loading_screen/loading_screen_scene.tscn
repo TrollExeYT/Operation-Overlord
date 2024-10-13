@@ -1,0 +1,47 @@
+[gd_scene load_steps=3 format=3 uid="uid://c6tupt14alsws"]
+
+[ext_resource type="Theme" uid="uid://co0nx0i0flpw4" path="res://scenes/src/themes/main_theme.tres" id="1_tcsne"]
+[ext_resource type="Script" path="res://scenes/gui/loading_screen/loading_screen_script.gd" id="2_126ul"]
+
+[node name="LoadingScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_tcsne")
+script = ExtResource("2_126ul")
+
+[node name="Background" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+color = Color(0.0784314, 0.0784314, 0.0784314, 1)
+
+[node name="Container" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -288.5
+offset_top = -64.0
+offset_right = 288.5
+offset_bottom = 64.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="MapName" type="Label" parent="Container"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "MAPNAME"
+horizontal_alignment = 1
+uppercase = true
+
+[node name="ProgressBar" type="ProgressBar" parent="Container"]
+layout_mode = 2
+
+[connection signal="value_changed" from="Container/ProgressBar" to="." method="_on_progress_bar_value_changed"]

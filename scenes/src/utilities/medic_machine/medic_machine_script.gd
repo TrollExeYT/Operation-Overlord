@@ -2,6 +2,7 @@ extends Utility
 
 func _ready() -> void:
 	cost = 0
+	message = "Press E to heal you"
 
 
 func _heal_player() -> void:

@@ -6,4 +6,5 @@ func _on_escape_pressed() -> void:
 
 
 func _on_start_pressed() -> void:
-	get_tree().change_scene_to_file("res://scenes/levels/battle_of_normandia/battle_of_normandy_scene.tscn")
+	GLOBAL.map_index = 0
+	get_tree().change_scene_to_file("res://scenes/gui/loading_screen/loading_screen_scene.tscn")

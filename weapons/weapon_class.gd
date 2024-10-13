@@ -44,7 +44,7 @@ func _reload() -> void:
 		return
 	
 	can_reload = false
-	INGAME.camera._change_message("Reloading...")
+	INGAME.camera._bool_reloading()
 	
 	var reload_ammunition = max_capacity - capacity
 	
@@ -57,7 +57,7 @@ func _reload() -> void:
 			capacity += reload_ammunition
 			ammunition -= reload_ammunition
 	
-	INGAME.camera._change_message("")
+	INGAME.camera._bool_reloading()
 	_change_info()
 	can_reload = true
 
