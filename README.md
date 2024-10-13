@@ -3,5 +3,5 @@
 Current Version: v0.4
 
 ### Roadmap
-- Entdeckung (Next Update)
+- Entdeckung (v1)
 - Soon...
