@@ -1,6 +1,6 @@
 # Operation Overlord
 
-Current Version: TESTVERSION
+Current Version: v0.4
 
 ### Roadmap
 - Ausf. A (Next Update)
